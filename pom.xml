@@ -6,7 +6,23 @@
 
     <groupId>com.tx</groupId>
     <artifactId>rabbitMQ-demo</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>hello-demo</module>
+        <module>work-queues-demo</module>
+        <module>rpc-demo</module>
+    </modules>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
+        <dependency>
+            <groupId>com.rabbitmq</groupId>
+            <artifactId>amqp-client</artifactId>
+            <version>5.2.0</version>
+        </dependency>
+
+    </dependencies>
 
 
 </project>
